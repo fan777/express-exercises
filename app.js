@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 const ExpressError = require('./error');
 const { calcMean, calcMedian, calcMode } = require('./calc');
 

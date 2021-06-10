@@ -41,10 +41,10 @@ function calcMode(nums) {
 
   if (frequency.length == 1) {
     //throw new Error('mode undefined, each num is the same');
-    return 'mode undefined, each num is the same';
+    return 'mode undefined, every num cannot be the same';
   } else if (frequency.length == mode.length) {
     //throw new Error('mode undefined, each unique num has same frequency');
-    return 'mode undefined, each unique num has same frequency';
+    return 'mode undefined, each unique num cannot have same frequency';
   } else {
     return mode;
   }
