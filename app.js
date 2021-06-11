@@ -12,7 +12,7 @@ app.get('/mean', (req, res, next) => {
       value: calcMean(nums),
     });
   } catch (e) {
-    next(e);
+    return next(e);
   }
 })
 
@@ -24,7 +24,7 @@ app.get('/median', (req, res, next) => {
       value: calcMedian(nums),
     })
   } catch (e) {
-    next(e);
+    return next(e);
   }
 })
 
@@ -36,7 +36,7 @@ app.get('/mode', (req, res, next) => {
       value: calcMode(nums),
     })
   } catch (e) {
-    next(e);
+    return next(e);
   }
 })
 
@@ -50,7 +50,7 @@ app.get('/all', (req, res, next) => {
       mode: calcMode(nums),
     })
   } catch (e) {
-    next(e);
+    return next(e);
   }
 })
 
